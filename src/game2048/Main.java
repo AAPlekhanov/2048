@@ -15,7 +15,7 @@ public class Main {
 
        JFrame game = new JFrame();
 
-
+       //comment 2
 
         game.setTitle("2048");
         game.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

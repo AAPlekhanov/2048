@@ -15,7 +15,6 @@ public class Main {
 
        JFrame game = new JFrame();
 
-       //comment
 
 
         game.setTitle("2048");

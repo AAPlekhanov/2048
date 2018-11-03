@@ -1,11 +1,10 @@
 package game2048;
 
-import java.awt.*;
+import java.awt.Color;
 
 public class Tile {
 
     int value;
-
 
     public  Tile(){
         value=0;
@@ -15,32 +14,20 @@ public class Tile {
         value=i;
     }
 
-
-
-
-
-    boolean isEmpty(){
-
-        if(value==0)return true;
+    boolean isEmpty() {
+        if (value == 0) return true;
         else return false;
-
     }
 
-
-
     Color getFontColor(){
-
         if(value<16)
         return new Color(0x776e65);
         else return new Color(0xf9f6f2);
     }
 
     Color getTileColor(){
-
         Color res = null;
-
         switch (value) {
-
             case   0: res= new Color (0xcdc1b4); break;
             case   2:res= new Color(0xeee4da);break;
             case   4:res= new Color(0xede0c8);break;
@@ -55,9 +42,6 @@ public class Tile {
             case   2048:res= new Color(0xedc22e);break;
             default:  res = new Color (0xff0000); break;
         }
-
         return res;
     }
-
-
 }

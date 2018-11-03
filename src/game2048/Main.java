@@ -1,34 +1,21 @@
 package game2048;
 
-import javax.swing.*;
+import javax.swing.JFrame;
+import javax.swing.WindowConstants;
 
 public class Main {
-    public static void main(String args[]){
-
+    public static void main(String args[]) {
         Model model = new Model();
-
-
         Controller controller = new Controller(model);
-
-
-
-
-       JFrame game = new JFrame();
-
+        JFrame game = new JFrame();
 
         game.setTitle("2048");
         game.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         game.setSize(450, 500);
         game.setResizable(false);
-
         game.add(controller.getView());
-
-
         game.setLocationRelativeTo(null);
         game.setVisible(true);
-
-
-
     }
 
 }
